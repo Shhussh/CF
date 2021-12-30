@@ -1,45 +1,45 @@
 Mutations,Regions,Allele Frequencies (%),Standard Errors
-G542X,Hispanic Regions Meta-Analysis,5.76,0.1292284798
-G542X,US,2.51,0.0450555213
-G551D,Hispanic Regions Meta-Analysis,0.109,0.002736786437
-G551D,US,2.17,0.04195235393
-N1303K,Hispanic Regions Meta-Analysis,1.41,0.03178049716
-N1303K,US,1.49,0.03492849839
-R117H,Hispanic Regions Meta-Analysis,0.0301,0.0009669539803
-R117H,US,1.4,0.03391164992
-W1282X,Hispanic Regions Meta-Analysis,0.555,0.01280624847
-W1282X,US,1.2,0.03144837039
-R553X,Hispanic Regions Meta-Analysis,0.425,0.009513148795
-R553X,US,0.94,0.02733130074
-621+1G>T,Hispanic Regions Meta-Analysis,0.101,0.002525866188
-621+1G>T,US,0.91,0.02778488798
-1717-1G>A,Hispanic Regions Meta-Analysis,0.315,0.007436396977
-1717-1G>A,US,0.86,0.02660826939
-3849+10kbC>T,Hispanic Regions Meta-Analysis,0.223,0.005440588203
-3849+10kbC>T,US,0.85,0.02643860813
-2789+5G>A,Hispanic Regions Meta-Analysis,0.131,0.00331662479
-2789+5G>A,US,0.74,0.02475883681
-R1162X,Hispanic Regions Meta-Analysis,1.21,0.02981610303
-R1162X,US,0.45,0.01928730152
-I507del,Hispanic Regions Meta-Analysis,0.132,0.003209361307
-I507del,US,0.45,0.01928730152
-G85E,Hispanic Regions Meta-Analysis,1.14,0.02736786437
-G85E,US,0.41,0.01849324201
-3120+1G>A,Hispanic Regions Meta-Analysis,0.295,0.01280624847
-3120+1G>A,US,0.4,0.01827566688
-3659delC,Hispanic Regions Meta-Analysis,0.0504,0.001618641406
-3659delC,US,0.38,0.0171464282
-R347P,Hispanic Regions Meta-Analysis,0.0901,0.002128379665
-R347P,US,0.36,0.01772004515
-A455E,Hispanic Regions Meta-Analysis,0.0301,0.0009669539803
-A455E,US,0.34,0.01685229955
-1898+1G>A,Hispanic Regions Meta-Analysis,0.0301,0.0008185352772
+G542X,Hispanic CF Patients Meta-Analysis,5.76,0.1292284798
+G542X,US CF Patients Meta-Analysis,2.51,0.0450555213
+G551D,Hispanic CF Patients Meta-Analysis,0.109,0.002736786437
+G551D,US CF Patients Meta-Analysis,2.17,0.04195235393
+N1303K,Hispanic CF Patients Meta-Analysis,1.41,0.03178049716
+N1303K,US CF Patients Meta-Analysis,1.49,0.03492849839
+R117H,Hispanic CF Patients Meta-Analysis,0.0301,0.0009669539803
+R117H,US CF Patients Meta-Analysis,1.4,0.03391164992
+W1282X,Hispanic CF Patients Meta-Analysis,0.555,0.01280624847
+W1282X,US CF Patients Meta-Analysis,1.2,0.03144837039
+R553X,Hispanic CF Patients Meta-Analysis,0.425,0.009513148795
+R553X,US CF Patients Meta-Analysis,0.94,0.02733130074
+621+1G>T,Hispanic CF Patients Meta-Analysis,0.101,0.002525866188
+621+1G>T,US CF Patients Meta-Analysis,0.91,0.02778488798
+1717-1G>A,Hispanic CF Patients Meta-Analysis,0.315,0.007436396977
+1717-1G>A,US CF Patients Meta-Analysis,0.86,0.02660826939
+3849+10kbC>T,Hispanic CF Patients Meta-Analysis,0.223,0.005440588203
+3849+10kbC>T,US CF Patients Meta-Analysis,0.85,0.02643860813
+2789+5G>A,Hispanic CF Patients Meta-Analysis,0.131,0.00331662479
+2789+5G>A,US CF Patients Meta-Analysis,0.74,0.02475883681
+R1162X,Hispanic CF Patients Meta-Analysis,1.21,0.02981610303
+R1162X,US CF Patients Meta-Analysis,0.45,0.01928730152
+I507del,Hispanic CF Patients Meta-Analysis,0.132,0.003209361307
+I507del,US CF Patients Meta-Analysis,0.45,0.01928730152
+G85E,Hispanic CF Patients Meta-Analysis,1.14,0.02736786437
+G85E,US CF Patients Meta-Analysis,0.41,0.01849324201
+3120+1G>A,Hispanic CF Patients Meta-Analysis,0.295,0.01280624847
+3120+1G>A,US CF Patients Meta-Analysis,0.4,0.01827566688
+3659delC,Hispanic CF Patients Meta-Analysis,0.0504,0.001618641406
+3659delC,US CF Patients Meta-Analysis,0.38,0.0171464282
+R347P,Hispanic CF Patients Meta-Analysis,0.0901,0.002128379665
+R347P,US CF Patients Meta-Analysis,0.36,0.01772004515
+A455E,Hispanic CF Patients Meta-Analysis,0.0301,0.0009669539803
+A455E,US CF Patients Meta-Analysis,0.34,0.01685229955
+1898+1G>A,Hispanic CF Patients Meta-Analysis,0.0301,0.0008185352772
 1898+1G>A,US,0.312,0.0160623784
-R334W,Hispanic Regions Meta-Analysis,1.56,0.03521363372
+R334W,Hispanic CF Patients Meta-Analysis,1.56,0.03521363372
 R334W,US,0.307,0.01593737745
-R560T,Hispanic Regions Meta-Analysis,0,0
+R560T,Hispanic CF Patients Meta-Analysis,0,0
 R560T,US,0.25,0.01670329309
-711+1G>T,Hispanic Regions Meta-Analysis,0.128,0.003178049716
+711+1G>T,Hispanic CF Patients Meta-Analysis,0.128,0.003178049716
 711+1G>T,US,0.2,0.015
-2184delA,Hispanic Regions Meta-Analysis,0.27,0.01058300524
+2184delA,Hispanic CF Patients Meta-Analysis,0.27,0.01058300524
 2184delA,US,0.18,0.0142126704
