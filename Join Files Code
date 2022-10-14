@@ -1,0 +1,31 @@
+import pandas as pd
+
+#left_df represents thee first data set
+#you can change the csv file to your own
+
+left_df = pd.read_csv('/Users/shubhagautam/Documents/examplefile1.csv') 
+
+#right_ddf represents thee second data set
+#you can change the csv file to your own again
+
+right_df = pd.read_csv('/Users/shubhagautam/Documents/exampledata2.csv')
+
+#left_join_df represents joining in respect to the first data set. Here we are combining names (names for left data set will now also have data from second data set once joined), which can represent protein names, for example
+#the 'how' represents that we are joining to thee 'left' data set, which is left_df
+
+left_join_df = pd.merge(left_df, right_df, on='Name', how='left')
+
+print(left_join_df)
+
+#the rest works the same as the left_join_df junction
+
+right_join_df = pd.merge(left_df, right_df, on='Name', how='right')
+
+print(right_join_df)
+
+inner_join_df = pd.merge(left_df, right_df, on='Name', how='inner')
+
+print(inner_join_df)
+
+outer_join_df = pd.merge(left_df, right_df, on='Name', how='outer')
+print(outer_join_df)
