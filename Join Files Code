@@ -1,4 +1,7 @@
 import pandas as pd
+import rdkit
+from rdkit import Chem
+from rdkit.Chem import PandasTools
 
 #left_df represents thee first data set
 #you can change the csv file to your own
@@ -29,3 +32,34 @@ print(inner_join_df)
 
 outer_join_df = pd.merge(left_df, right_df, on='Name', how='outer')
 print(outer_join_df)
+
+#we can convert SDF files to pandas and then use the pandas merge function to merge sdf files
+#I used the same files for both SDFFile and SDFFile_2 because I didn't have another SD file, but the code should still work with a different file
+
+SDFFile = "/Users/shubhagautam/Downloads/PHF1-Tudor-PHD-glide-hits-final.sdf"
+SDFFile_2 = "/Users/shubhagautam/Downloads/PHF1-Tudor-PHD-glide-hits-final.sdf"
+BRDLigs = PandasTools.LoadSDF(SDFFile)
+BRDLigs_2 = PandasTools.LoadSDF(SDFFile_2)
+
+left_join_again_df = pd.merge(BRDLigs, BRDLigs_2, on='COMPOUND_ID', how='left')
+print(left_join_again_df)
+right_join_again_df = pd.merge(BRDLigs, BRDLigs_2, on='COMPOUND_ID', how='right')
+print(right_join_again_df)
+inner_join_again_df = pd.merge(BRDLigs, BRDLigs_2, on='COMPOUND_ID', how='inner')
+print(inner_join_again_df)
+outer_join_again_df = pd.merge(BRDLigs, BRDLigs_2, on='COMPOUND_ID', how='left')
+print(outer_join_again_df)
+
+#we can read excel files using pandas and then use the merge function
+
+excel_data_df = pd.read_excel('/Users/shubhagautam/Downloads/PHF1-Tudor-PHD-glide-hits-final.xlsx')
+excel_data_2_df = pd.read_excel('/Users/shubhagautam/Downloads/PHF1-Tudor-PHD-glide-hits-final.xlsx')
+leftjoin_df = pd.merge(excel_data_df, excel_data_2_df, on='COMPOUND_ID', how='left')
+print(leftjoin_df)
+rightjoin_df = pd.merge(excel_data_df, excel_data_2_df, on='COMPOUND_ID', how='right')
+print(rightjoin_df)
+innerjoin_df = pd.merge(excel_data_df, excel_data_2_df, on='COMPOUND_ID', how='inner')
+print(innerjoin_df)
+outerjoin_df = pd.merge(excel_data_df, excel_data_2_df, on='COMPOUND_ID', how='left')
+print(outerjoin_df)
+
