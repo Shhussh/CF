@@ -1,0 +1,61 @@
+import pandas as pd
+from rdkit.Chem import PandasTools
+
+def join_file(file1, file2, merge_column_name, jointype):
+    question = input("What is the file type? Answer .xlsx, .csv, or .sdf.")
+    if question == ".csv":
+        left_df = pd.read_csv(file1)
+        right_df = pd.read_csv(file2)
+        if jointype == "left":
+            left_join_df = pd.merge(left_df, right_df, on= merge_column_name, how=jointype)
+            print(left_join_df)
+        if jointype == "right":
+            right_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(right_join_df)
+        if jointype == "inner":
+            inner_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(inner_join_df)
+        if jointype == "outer":
+            outer_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(outer_join_df)
+    if question == ".sdf":
+        left_df = PandasTools.LoadSDF(file1)
+        right_df = PandasTools.LoadSDF(file2)
+        if jointype == "left":
+            left_join_df = pd.merge(left_df, right_df, on= merge_column_name, how=jointype)
+            print(left_join_df)
+        if jointype == "right":
+            right_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(right_join_df)
+        if jointype == "inner":
+            inner_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(inner_join_df)
+        if jointype == "outer":
+            outer_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(outer_join_df)
+    if question == ".xlsx":
+        left_df = pd.read_excel(file1)
+        right_df = pd.read_excel(file2)
+        if jointype == "left":
+            left_join_df = pd.merge(left_df, right_df, on= merge_column_name, how=jointype)
+            print(left_join_df)
+        if jointype == "right":
+            right_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(right_join_df)
+        if jointype == "inner":
+            inner_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(inner_join_df)
+        if jointype == "outer":
+            outer_join_df = pd.merge(left_df, right_df, on=merge_column_name, how=jointype)
+            print(outer_join_df)
+
+#for the join_file function, input your file1, file2, merge_column_name, and jointype
+#file1: acts as your lefthand file
+#file2: acts as your righthand file
+#merge_column_name: it's the column you want to merge all the data relative to (ex. Compound ID)
+#jointype: can be left, right, inner, or outer
+
+#IMPORTANT: enter file1, file2, merge_column_name, and jointype with '' surrounding them! 
+#otherwise, the function will not work
+
+join_file(file1, file2, merge_column_name, jointype)
